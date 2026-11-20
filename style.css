@@ -1,0 +1,46 @@
+:root {
+  --vermelho: #e63946;
+  --azul: #1d4ed8;
+  --preto: #111111;
+}
+
+body { background-color: #ffffff; color: var(--preto); scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+/* Menu sempre visível (sem botão de três traços) */
+.navbar { background-color: #ffffff; border-bottom: 3px solid var(--vermelho); }
+.navbar-brand { color: var(--vermelho) !important; font-weight: 800; }
+.navbar .nav-link { color: var(--preto); font-weight: 500; padding: 0.4rem 0.7rem; }
+.navbar .nav-link:hover { color: var(--azul); }
+
+/* Início */
+.inicio { background: linear-gradient(135deg, #ffffff 55%, #eef3ff 100%); padding: 110px 0 70px; }
+.foto {
+  width: 280px; height: 280px;
+  object-fit: cover; object-position: center 20%;
+  border: 6px solid var(--azul);
+  box-shadow: 10px 10px 0 var(--vermelho);
+}
+.nome { font-weight: 800; }
+.destaque { color: var(--vermelho); }
+.azul { color: var(--azul); }
+.btn-vermelho { background-color: var(--vermelho); color: #fff; border: none; }
+.btn-vermelho:hover { background-color: #c62f3b; color: #fff; }
+.btn-azul { background-color: var(--azul); color: #fff; border: none; }
+.btn-azul:hover { background-color: #1e40af; color: #fff; }
+
+/* Seções */
+section { padding: 70px 0; }
+.fundo-cinza { background-color: #f5f7fb; }
+.titulo { font-weight: 800; margin-bottom: 8px; }
+.linha { width: 70px; height: 5px; background: linear-gradient(90deg, var(--vermelho), var(--azul)); border-radius: 5px; margin: 0 auto 40px; }
+
+/* Cards */
+.card { border: none; border-radius: 16px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); transition: transform 0.2s, box-shadow 0.2s; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15); }
+.card.c-vermelho { border-top: 5px solid var(--vermelho); }
+.card.c-azul { border-top: 5px solid var(--azul); }
+.card.c-preto { border-top: 5px solid var(--preto); }
+.icone { font-size: 2.6rem; }
+
+footer { background-color: var(--preto); color: #fff; border-top: 4px solid var(--vermelho); }
